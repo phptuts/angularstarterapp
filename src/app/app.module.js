@@ -1,5 +1,3 @@
-
-
-var angular = angular.module('starterApp', []);
+var app = angular.module('starterApp', []);
 
 

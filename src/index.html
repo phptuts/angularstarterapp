@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html ng-app="starterApp">
-    <head>
-        <title>TODO supply a title</title>
+    <head ng-controller="TitleController">
+        <title>{{ title }}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ description }}">
+        <meta name="description" content="{{ keywords }}">
+
     </head>
     <body>
         {{ 1 + 1 }}
@@ -11,8 +14,10 @@
         <script src="/bower_components/angular/angular.min.js" ></script>
         <script src="/bower_components/angular-route/angular-route.min.js"></script>
         <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
-        <script src="/src/app/app.module.js"></script>
-        <script src="/src/app/app.routes.js"></script>
+        <script src="app/app.module.js"></script>
+        <script src="app/app.routes.js"></script>
+        <script src="app/shared/services/configService.js"></script>
+        <script src="/src/app/controllers/TitleController.js"></script>
 
     </body>
 </html>
